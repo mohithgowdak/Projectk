@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Legacy Vault - A Library That Never Burns</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2E7D32;
+            --primary-blue: #1976D2;
+            --accent-green: #4CAF50;
+            --accent-blue: #2196F3;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">Digital Legacy Vault</div>
+                <div>
+                    <a href="/app" class="bg-black text-primary-green px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition">Get Started</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">A Library That Never Burns</h1>
+                    <p class="text-xl mb-8">Preserving human memory for generations to come</p>
+                    <div class="flex space-x-4">
+                        <a href="/app" class="bg-black text-primary-green px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition">Start Your Legacy</a>
+                        <a href="#learn-more" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-green transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <svg class="w-full h-auto rounded-lg shadow-2xl" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="400" height="300" fill="#ffffff" rx="8"/>
+                        
+                        <!-- Digital Vault Illustration -->
+                        <rect x="100" y="50" width="200" height="200" fill="#E3F2FD" rx="4"/>
+                        
+                        <!-- Memory Blocks -->
+                        <rect x="120" y="70" width="60" height="60" fill="#4CAF50" rx="4"/>
+                        <rect x="220" y="70" width="60" height="60" fill="#2196F3" rx="4"/>
+                        <rect x="120" y="150" width="60" height="60" fill="#2196F3" rx="4"/>
+                        <rect x="220" y="150" width="60" height="60" fill="#4CAF50" rx="4"/>
+                        
+                        <!-- Connection Lines -->
+                        <path d="M180 100 L220 100" stroke="#1976D2" stroke-width="2"/>
+                        <path d="M180 180 L220 180" stroke="#1976D2" stroke-width="2"/>
+                        <path d="M150 130 L150 170" stroke="#1976D2" stroke-width="2"/>
+                        <path d="M250 130 L250 170" stroke="#1976D2" stroke-width="2"/>
+                        
+                        <!-- Decorative Elements -->
+                        <circle cx="200" cy="130" r="5" fill="#2E7D32"/>
+                        <circle cx="200" cy="170" r="5" fill="#2E7D32"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Section -->
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">A Story That Echoes Through Time</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Imagine a young boy sitting on the floor of his grandfather's study, listening to tales from the past — stories of love, war, struggle, and wisdom. The boy grows up, his grandfather passes away, and the stories fade like fog at dawn.
+                </p>
+                <p class="text-lg text-gray-600">
+                    But what if those memories had been preserved? Not just as files, but as conversations. As moments. As a living, talking version of the man he loved?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="learn-more" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Core Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="text-primary-green text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-semibold mb-4">Memory Upload & Timeline</h3>
+                    <p class="text-gray-600">Record and organize your life stories across timelines, preserving every precious moment.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="text-primary-blue text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold mb-4">AI Memory Intelligence</h3>
+                    <p class="text-gray-600">Let AI understand and organize your memories, making them easily searchable and accessible.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="text-primary-green text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold mb-4">Blockchain Security</h3>
+                    <p class="text-gray-600">Your memories are secured with blockchain technology, ensuring they remain private and accessible only to those you choose.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-green text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">1</div>
+                    <h3 class="font-semibold mb-2">Create Account</h3>
+                    <p class="text-gray-600">Sign up with your wallet</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">2</div>
+                    <h3 class="font-semibold mb-2">Upload Memories</h3>
+                    <p class="text-gray-600">Add your stories and media</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-green text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">3</div>
+                    <h3 class="font-semibold mb-2">Set Access Rules</h3>
+                    <p class="text-gray-600">Control who sees what</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary-blue text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">4</div>
+                    <h3 class="font-semibold mb-2">Share Legacy</h3>
+                    <p class="text-gray-600">Pass on your memories</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to Preserve Your Story?</h2>
+            <p class="text-xl mb-8">Join us in building the future of human memory</p>
+            <a href="/app" class="bg-black text-primary-green px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition">Get Started Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Digital Legacy Vault</h3>
+                    <p class="text-gray-400">Preserving human memory for generations to come</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">mohithgowdak.kote@gmail.com</li>
+                        <li class="text-gray-400">+91 81231 18077</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Digital Legacy Vault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
